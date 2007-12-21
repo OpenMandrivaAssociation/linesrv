@@ -14,6 +14,7 @@ Source2:	linesrv.conf.bz2
 Source3:	linesrv-scripts.tar.bz2
 Source4:	linesrv.conf.documentation.bz2
 Requires(pre): 	rpm-helper
+BuildRoot: 	%{_tmppath}/%{name}-%{version}
 BuildRequires:	pam-devel 
 #BuildRequires:	mysql-devel
 
