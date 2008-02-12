@@ -35,7 +35,6 @@ Group:          Networking/Other
 Summary:        Line Control Server - Web Status
 
 %description web
-
 The line control system will allow authorized LAN users to manipulate
 the network interface (usually a modem) that gives the Internet
 access on a Linux box without having to use telnet. It's based on
