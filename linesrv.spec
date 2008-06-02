@@ -82,8 +82,8 @@ install -m755 scripts/*  %{buildroot}/%{_libdir}/%{name}
 #web stuff
 install -d %{buildroot}/%{_var}/www/html/lclog
 install lclog/html/* %{buildroot}/%{_var}/www/html/lclog/
-install -d %{buildroot}/%{_localstatedir}/%{name}
-mknod %{buildroot}/%{_localstatedir}/%{name}/htmlstatus p
+install -d %{buildroot}/%{_localstatedir}/lib/%{name}
+mknod %{buildroot}/%{_localstatedir}/lib/%{name}/htmlstatus p
 
 #logs:
 install -d %{buildroot}/%{_var}/log/%{name}
@@ -118,7 +118,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %{_var}/www/html/lclog/
 %attr(4750,root,apache) %{_var}/www/cgi-bin/*
-%dir %{_localstatedir}/%{name}
-%attr(640,root,apache) %{_localstatedir}/%{name}/htmlstatus
+%dir %{_localstatedir}/lib/%{name}
+%attr(640,root,apache) %{_localstatedir}/lib/%{name}/htmlstatus
 %doc htmlstatus/README
 
