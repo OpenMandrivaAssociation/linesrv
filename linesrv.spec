@@ -1,5 +1,5 @@
 %define version 2.1.21
-%define rel %mkrel 2
+%define rel %mkrel 3
 
 Summary: 	Line Control Server
 Name: 		linesrv
