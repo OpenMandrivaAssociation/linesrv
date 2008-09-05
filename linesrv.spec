@@ -47,7 +47,7 @@ This package provides web-based status report of the line.
 
 %prep
 %setup -q -n %{name}-%(echo %{version}|cut -f1-2 -d.) -a3
-%patch0 -p1 -b .linesrv
+%patch0 -p1 -b .header
 cp %{SOURCE4} .
 bunzip2 `basename %{SOURCE4}`
 
