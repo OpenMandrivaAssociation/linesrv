@@ -1,7 +1,7 @@
 Summary: 	Line Control Server
 Name: 		linesrv
 Version: 	2.1.21
-Release: 	%{mkrel 4}
+Release: 	%mkrel 5
 # debian/copyright in the source suggests GPLv2 specifically applies
 License: 	GPLv2
 Group: 		Networking/Other
