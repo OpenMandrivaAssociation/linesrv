@@ -12,6 +12,7 @@ Source2:	linesrv.conf.bz2
 Source3:	linesrv-scripts.tar.bz2
 Source4:	linesrv.conf.documentation.bz2
 Patch0:		linesrv-2.1.21-debian-syslog_header.patch
+Patch1:		linesrv-2.1.21-str-fmt.patch
 Requires(pre): 	rpm-helper
 BuildRoot: 	%{_tmppath}/%{name}-%{version}
 BuildRequires:	pam-devel 
@@ -48,6 +49,7 @@ This package provides web-based status report of the line.
 %prep
 %setup -q -n %{name}-%(echo %{version}|cut -f1-2 -d.) -a3
 %patch0 -p1 -b .header
+%patch1 -p0 -b .str
 cp %{SOURCE4} .
 bunzip2 `basename %{SOURCE4}`
 
