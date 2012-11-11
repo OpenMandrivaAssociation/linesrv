@@ -1,0 +1,11 @@
+diff -ur linesrv-2.1.orig/server/user_pam.c linesrv-2.1/server/user_pam.c
+--- linesrv-2.1.orig/server/user_pam.c	2004-10-06 15:37:14.000000000 +0200
++++ linesrv-2.1/server/user_pam.c	2007-12-16 17:59:59.000000000 +0100
+@@ -3,6 +3,7 @@
+ #include <security/pam_appl.h>
+ #include <string.h>
+ #include <stdlib.h>
++#include <sys/syslog.h>
+ #include "global_vars.h"
+ 
+ static struct pam_conv pamconv;

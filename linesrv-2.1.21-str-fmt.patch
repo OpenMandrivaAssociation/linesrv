@@ -1,0 +1,11 @@
+--- htmlstatus/htmlstatus.c.str	2011-01-02 17:18:43.000000000 +0000
++++ htmlstatus/htmlstatus.c	2011-01-02 17:19:03.000000000 +0000
+@@ -82,7 +82,7 @@
+ 	print_err_end();
+ 	exit(0);
+     }
+-    while ( fgets(line, 1999, fpipe) ) printf(line);
++    while ( fgets(line, 1999, fpipe) ) printf("%s",line);
+     fflush(stdout);
+     fclose(fpipe);
+     exit(0);
