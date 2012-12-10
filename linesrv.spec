@@ -125,3 +125,68 @@ rm -rf %{buildroot}
 %attr(640,root,apache) %{_localstatedir}/lib/%{name}/htmlstatus
 %doc htmlstatus/README
 
+
+
+%changelog
+* Thu Mar 17 2011 Oden Eriksson <oeriksson@mandriva.com> 2.1.21-10mdv2011.0
++ Revision: 645813
+- relink against libmysqlclient.so.18
+
+* Sun Jan 02 2011 Funda Wang <fwang@mandriva.org> 2.1.21-9mdv2011.0
++ Revision: 627616
+- fix str fmt
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - rebuilt against mysql-5.5.8 libs, again
+    - rebuilt against mysql-5.5.8 libs
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Sat Dec 06 2008 Oden Eriksson <oeriksson@mandriva.com> 2.1.21-5mdv2009.1
++ Revision: 311338
+- rebuilt against mysql-5.1.30 libs
+
+* Fri Sep 05 2008 Adam Williamson <awilliamson@mandriva.org> 2.1.21-4mdv2009.0
++ Revision: 281027
+- don't use a silly name for the patch backup file...
+- s,%%{_var},%%{_localstatedir}
+- s,$RPM_BUILD_ROOT,%%{buildroot}
+- restore the mysql build (seems to work...)
+- add debian-syslog_header.patch from Debian: fixes a build error
+- new license policy
+- drop unnecessary defines
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - fix spacing at top of description
+    - kill re-definition of %%buildroot on Pixel's request
+    - use %%mkrel
+
+  + Pixel <pixel@mandriva.com>
+    - adapt to %%_localstatedir now being /var instead of /var/lib (#22312)
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+
+* Wed Sep 14 2005 Buchan Milne <bgmilne@linux-mandrake.com> 2.1.21-1mdk
+- New release 2.1.21
+- drop patch, fix conflict
+
+* Thu Aug 21 2003 Buchan Milne <bgmilne@linux-mandrake.com> 2.1.17-2mdk
+- gcc3.3 fixes (Steffen)
+
+* Fri Jul 25 2003 Steffen Barszus <st_barszus@gmx.de> 2.1.17-1mdk
+- new version
+- small fix for config 
+- This is a temporary RPM for convinience for 9.1 users
+
+* Mon May 26 2003 Buchan Milne <bgmilne@linux-mandrake.com> 2.1.16-2mdk
+- Make distriblint happy
+- Fix permissions of scripts
+
+* Mon Mar 03 2003 Buchan Milne <bgmilne@linux-mandrake.com> 2.1.16-1mdk
+- Initial Mandrake RPM based on mserver
+- Lots of work from Steffen Barzus on configs and scripts
+
