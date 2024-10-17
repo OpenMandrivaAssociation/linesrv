@@ -5,7 +5,7 @@ Release:	12
 # debian/copyright in the source suggests GPLv2 specifically applies
 License:	GPLv2+
 Group:		Networking/Other
-Url:		http://linecontrol.sourceforge.net
+Url:		https://linecontrol.sourceforge.net
 Source0:	%{name}-%{version}.src.tar.bz2
 Source1:	linesrv.init.bz2
 Source2:	linesrv.conf.bz2
