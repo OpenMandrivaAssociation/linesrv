@@ -14,6 +14,11 @@ Source4:	linesrv.conf.documentation.bz2
 Patch0:		linesrv-2.1.21-debian-syslog_header.patch
 Patch1:		linesrv-2.1.21-str-fmt.patch
 Requires(pre):	rpm-helper
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pam-devel
 BuildRequires:	mysql-devel
 
